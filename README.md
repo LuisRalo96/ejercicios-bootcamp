@@ -1,5 +1,6 @@
 # ejercicios-bootcamp
 ejercicios prof Eduardo
+
 2.-Reemplazar vocales por posiciones
 
 Dado un string de longitud N. Donde N es mayor a 0.
