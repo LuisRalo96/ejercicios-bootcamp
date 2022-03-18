@@ -1,5 +1,5 @@
 # ejercicios-bootcamp
-ejercicios prof Eduardo
+ejercicios Prof.: Eduardo
 
 2.-Reemplazar vocales por posiciones
 
