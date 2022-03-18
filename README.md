@@ -20,3 +20,28 @@ u = 5
 Salida.
 
 'H4l1 m5nd4'
+
+
+5.- Contador de substrings.
+
+Desarrolla una función que permita conocer la cantidad de veces que existe un substring en un string.
+
+La función debe cumplir con los siguientes requerimientos.
+
+La función debe tener por nombre _contador*substrings*.
+La función debe recibir como argumento el string a evaluar y el substring del cual se quiere conocer la cantidad de coincidencias.
+La función debe retornar, mediante un número entero, la cantidad de veces que existe el substring en el string original.
+Ejemplos.
+
+>>> contador_substrings('Hola mundo', 'o')
+2
+
+>>> contador_substrings('Nuevo ejercicio en PyWombat', 'ue')
+1
+
+>>> contador_substrings('Contador de caracteres', 'de')
+1
+
+>>> contador_substrings('PyWombat Ejercicios de Python con extensión Py', 'Py')
+3
+Restricción: No es posible utilizar el método count del String. 
