@@ -13,15 +13,11 @@ Desarrolla un programa en Python que permite reemplazar todas las vocales del St
 
 Donde las posiciones serán las siguientes.
 
-a = 1
-
-e = 2
-
-i = 3
-
-o = 4
-
-u = 5
+* a = 1
+* e = 2
+* i = 3
+* o = 4
+* u = 5
 
 Salida.
 
@@ -73,3 +69,31 @@ Ejemplos
 
 -> cantitdad_digitos(1234567890)
 10
+
+
+8.- Porcentaje números pares
+
+Dado un listado de números enteros con Longitud N. Donde N es mayor a 0.
+
+Ejemplo.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+
+Define una función que permita conocer si más del 50% de los números son pares.
+
+La función debe cumplir con los siguientes puntos.
+
+* Debe tener por nombre pares.
+* La función debe recibir, de forma obligatoria, un listado de números enteros.
+* La función retorna verdadero, o falso, dependiendo si más de la mitad de los números pares.
+Ejemplo.
+
+-> pares([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+True
+
+-> pares([2, 2, 2, 2, 3, 4, 2])
+True
+
+-> pares([2, 1, 1, 1, 1, 3, 10])
+False
