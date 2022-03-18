@@ -52,3 +52,24 @@ Ejemplos.
 3
 
 Restricción: No es posible utilizar el método count del String. 
+
+
+6.- Cantidad de dígitos número entero.
+
+Definir una función la cual nos permita conocer cuántos dígitos posee un número.
+
+* La función debe tener por nombre cantidad_digitos.
+* La función debe poseer el parámetro numero.
+* La función debe retornar la cantidad de dígitos del parámetro.
+* No es posible utilizar la función str.
+
+Ejemplos
+
+-> cantitdad_digitos(10)
+2
+
+-> cantitdad_digitos(2019)
+4
+
+-> cantitdad_digitos(1234567890)
+10
