@@ -1,4 +1,4 @@
-# HECHO POR EL PROFE EDUARDO
+# PRIMERA DEPURACION
 """
 - Poseer una longitud mínima de 6 caracteres.
 
@@ -11,50 +11,59 @@
 - Las contraseñas no pueden comenzar con la palabra _Password_.
 """
 
+def is_valid_vocales(password):
+    for caracter in password:
+        if caracter in 'AEIOU':
+            return True
+    
+    return False
+
+    
+def is_valid_letras(password):
+    for caracter in password:
+        if caracter in 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ':
+            return True
+    
+    return False
+
+
+def is_valid_numeros(password):
+    contador = 0
+    
+    for caracter in password:
+        if caracter in '1234567890':
+            contador += 1
+    
+    if contador < 3:
+        return False
+    else:
+        return True
+
+
+def is_valid_especiales(password):
+    for caracter in password:
+        if caracter in '?*%&@':
+            return True
+    
+    return False
+
 def is_valid_password(password):
     
     if len(password) < 6:
         return False
     
-    contador = 0
-    
-    letras = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'
-    vocales = 'AEIOU'
-    numeros = '1234567890'
-    especiales = '?*%&@'
-    
-    condicion_dos = False
-    condicion_tres = False
-    condicion_cuatro = False
-    condicion_cinco = False
-    
-    for caracter in password:
-        
-        if caracter in letras: # Si existe una letra en Mayúscula la condición se cumple.
-            condicion_dos = True
-            
-        if caracter in vocales: # Si existe una vocal en Mayúscula la condición se cumple.
-            condicion_tres = True
-    
-        if caracter in numeros:
-            contador += 1
-            
-        if caracter in especiales:
-            condicion_cinco = True
-
-    if condicion_dos == False:
+    if is_valid_vocales(password) == False:
         return False
     
-    if condicion_tres == False:
+    if is_valid_letras(password) == False:
         return False
     
-    if contador < 3:
+    if is_valid_numeros(password) == False:
         return False
     
-    if condicion_cinco == False:
+    if is_valid_especiales(password) == False:
         return False
-
-    #[pos inicial:pos final] Donde pos final = pos final - 1
+    
     if password[0:8] == 'password':
         return False
     
